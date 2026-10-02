@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased font-body-md min-h-screen;
+    background-color: #F7F3E8;
+    color: #24352C;
+  }
+
+  /* ===== CAMPUSCRAFT MINT + CREAM THEME ===== */
+
+  /* Main surfaces */
+  .bg-surface {
+    background-color: #F7F3E8 !important;
+  }
+
+  .bg-surface-container {
+    background-color: #FFFDF7 !important;
+  }
+
+  .bg-surface-container-low {
+    background-color: #F1F5EF !important;
+  }
+
+  .bg-surface-container-lowest {
+    background-color: #FFFDF7 !important;
+  }
+
+  .bg-surface-container-high {
+    background-color: #E8F0EA !important;
+  }
+
+  /* Primary mint */
+  .bg-primary {
+    background-color: #5F9275 !important;
+  }
+
+  .text-primary {
+    color: #5F9275 !important;
+  }
+
+  .text-on-primary {
+    color: #FFFDF7 !important;
+  }
+
+  /* Main text */
+  .text-on-surface {
+    color: #24352C !important;
+  }
+
+  .text-on-surface-variant {
+    color: #64756B !important;
+  }
+
+  /* Borders */
+  .border-outline {
+    border-color: #D5E2D8 !important;
+  }
+
+  .border-outline-variant {
+    border-color: #D5E2D8 !important;
+  }
+
+  /* Secondary mint */
+  .bg-secondary {
+    background-color: #A8CBB7 !important;
+  }
+
+  .text-secondary {
+    color: #5F9275 !important;
+  }
+
+  .bg-secondary-container {
+    background-color: #DCEBE1 !important;
+  }
+
+  .text-on-secondary-container {
+    color: #24352C !important;
+  }
+
+  /* Accent */
+  .bg-primary-container {
+    background-color: #A8CBB7 !important;
+  }
+
+  .text-on-primary-container {
+    color: #24352C !important;
+  }
+
+  /* ===== MATERIAL ICONS ===== */
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+    vertical-align: middle;
+  }
+
+  .material-symbols-outlined.fill-1 {
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+  }
+}
+
+/* ===== SCROLLBARS ===== */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
